@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:hyphenate="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
-
-    <com.hyphenate.easeui.widget.EaseContactList
-        android:id="@+id/contact_list"
+    <fragment
+        android:id="@+id/fragment"
+        android:name="com.hyphenate.easeui.ui.EaseChatFragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        hyphenate:ctsListInitialLetterBg="#abc"/>
-</android.support.constraint.ConstraintLayout>
+        android:layout_height="wrap_content"/>
+
+    <!--<com.hyphenate.easeui.widget.EaseContactList-->
+        <!--android:id="@+id/contact_list"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--hyphenate:ctsListInitialLetterBg="#abc"/>-->
+</LinearLayout>
